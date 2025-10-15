@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
  
-const mongouri="mongodb://localhost:27017/apna-boss";
+const mongouri=process.env.mongouri;
 
 mongoose.connect(mongouri);
 const db=mongoose.connection;
